@@ -1,0 +1,151 @@
+#team {
+    .team1 {
+        background-image: url(../img/REJ93.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+        height: 60vh;
+        position: relative;
+
+        .team-text {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+
+            h1 {
+                color: #072f60;
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 600;
+            }
+
+            .mini-box-team {
+                span {
+                    padding-right: 15px;
+                    color: #666666;
+                    cursor: pointer;
+
+
+
+                }
+
+                span:hover {
+                    color: #3bbca7;
+
+                }
+
+                p {
+                    padding-left: 5px;
+                    color: #3bbca7;
+                    cursor: pointer;
+
+                }
+
+            }
+
+        }
+    }
+}
+
+// team finished\\
+// ----------------------------\\
+#members {
+
+    width: 80%;
+    margin: 100px auto;
+
+
+
+    h5 {
+        text-align: center;
+        font-size: 36px;
+        color: #072f60;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 50px;
+
+
+
+
+        &::after {
+            content: '';
+            background-color: #FFD24D;
+            position: absolute;
+            top: 12px;
+            left: 32%;
+            border-radius: 50px;
+            width: 150px;
+            height: 22px;
+            z-index: -1;
+        }
+    }
+
+    .members-box {
+        margin-top: 30px;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            height: 100%;
+            transition: all .4s linear;
+            position: relative;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #000000ad 0%, transparent 80%);
+            border-radius: 3px;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 28%;
+            text-align: center;
+            font-size: 25px;
+
+            h3 {
+                color: white;
+                font-size: 18px;
+                line-height: 28px;
+                transition: all 0.4s linear;
+                text-align: center;
+            }
+
+            h4 {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                color: white;
+                transition: all 0.4s linear;
+                margin-top: -5px;
+            }
+
+        }
+
+        &:hover {
+            top: -10px;
+
+
+        }
+
+
+
+    }
+
+
+
+
+}
